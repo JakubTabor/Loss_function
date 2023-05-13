@@ -4,3 +4,4 @@
 # This function will be calculate absolute difference between my true value and predicted value
 # First i define "total_error", then I make for loop with comperhented list with (y_true, y_pred) using "zip" It will give one value from this two arrays 
 # To my "total_error" will be added "absolute difference" between "yt - yp" "total_error += abs(yt - yp)"
+# And this value will be printed "print("Total error", total_error)" 
