@@ -16,3 +16,4 @@
 # Now I put them into "array" "np.array(y_pred_new)" and I use "log" function to check how they look like "np.log(y_pred_new)"
 # I fill values from pattern to binary cross entropy "-np.mean(y_true*np.log(y_pred_new)+(1-y_true)*np.log(1-y_pred_new))"
 # Now from previous calculations I create function "log_loss", I create "max" and "min" values and put them into array, then use "log loss pattern"
+# I also create function for "mean_squared_error", I create "total_error" as a variable 
