@@ -11,3 +11,4 @@
 # And here is "mean absolute value" with numpy "np.mean(np.abs(y_pred - y_true))" and "total error" "np.sum(np.abs(y_pred - y_true))"
 # Now I define "epsilon" "epsilon = 1e-15" its value very close to zero but not zero np. (0.0000001), log(0) is undefined so we need to use epsilon
 # I need to get my values from 0 to 1 using "epsilon" "[max(i,epsilon)for i in y_pred]", here will by my (0) value 
+# My value before transformation "([1,1,0,0,1])" my value after transformation "[1, 1, 1e-15, 1e-15, 1]" 
