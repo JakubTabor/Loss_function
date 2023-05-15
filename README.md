@@ -20,3 +20,4 @@
 # Then I make for loop with "list comprehension" of "y_true, y_pred" using "zip" "for yt,yp in zip(y_true, y_pred)"
 # Now i need to add "squared error of my difference (yt-yp)" to my total_error and print it 
 # And here i define "mean_equared_error" "total_error/len(y_true)" it will return mean of my value and I also print it 
+# Using numpy my function look like that "np.mean(np.square(y_true-y_pred))"
