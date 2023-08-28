@@ -6,7 +6,7 @@
 * First i define "total_error", then I make for loop with **comperhented list** with (y_true, y_pred) **using zip** It will give **one value** from this two arrays 
 * To my **total_error** will be added **absolute difference** between **yt - yp** (total_error += abs(yt - yp) )
 * And this value will be printed "print("Total error", total_error)" 
-* Then it will return "mean of my value" "total_error / len(y_true)", I also print it " print("Mae", mean_absolute_value)"
+* Then it will return **mean of my value** (total_error / len(y_true) ), I also print it " print("Mae", mean_absolute_value)"
 
 # Now I put to my function "mean_absolute_value" this 2 arrays "y_pred, y_true)" and get values 
 # Here is how I get absolute difference using numpy "np.abs(y_pred - y_true)"
