@@ -13,9 +13,10 @@
 # And here is **mean absolute value with numpy** "np.mean(np.abs(y_pred - y_true))" and **total error** "np.sum(np.abs(y_pred - y_true))"
 
 # Now I define "epsilon" "epsilon = 1e-15" its value very close to zero but not zero np. (0.0000001), log(0) is undefined so we need to use epsilon
-# I need to get my values from 0 to 1 using "epsilon" "[max(i,epsilon)for i in y_pred]", here will by my (0) value 
-# My value before transformation "y_pred = np.array([1,1,0,0,1])" my value after transformation "[1, 1, 1e-15, 1e-15, 1]" 
-# And now transformation of my (1) value "[min(i,1-eplison)for i in y_pred_new]", before "([1,1,0,0,1])" after "[0.9999, 0.9999, 1e-15, 1e-15, 0.9999]"
+* I need to get my values from 0 to 1 using "epsilon" "[max(i, epsilon)for i in y_pred]", here will by my (0) value 
+* My value before transformation "y_pred = np.array([1, 1, 0, 0, 1])" my value after transformation "[1, 1, 1e-15, 1e-15, 1]" 
+
+# And now transformation of my (1) value "[min(i,1 - eplison)for i in y_pred_new]", before "([1, 1, 0, 0, 1])" after "[0.9999, 0.9999, 1e-15, 1e-15, 0.9999]"
 # Now I put them into "array" "np.array(y_pred_new)" and I use "log" function to check how they look like "np.log(y_pred_new)"
 # I fill values from pattern to binary cross entropy "-np.mean(y_true*np.log(y_pred_new)+(1-y_true)*np.log(1-y_pred_new))"
 # Now from previous calculations I create function "log_loss", I create "max" and "min" values and put them into array, then use "log loss pattern"
