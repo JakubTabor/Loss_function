@@ -17,8 +17,10 @@
 * My value before transformation "y_pred = np.array([1, 1, 0, 0, 1])" my value after transformation "[1, 1, 1e-15, 1e-15, 1]" 
 
 # And now transformation of my (1) value "[min(i,1 - eplison)for i in y_pred_new]", before "([1, 1, 0, 0, 1])" after "[0.9999, 0.9999, 1e-15, 1e-15, 0.9999]"
-# Now I put them into "array" "np.array(y_pred_new)" and I use "log" function to check how they look like "np.log(y_pred_new)"
-# I fill values from pattern to binary cross entropy "-np.mean(y_true*np.log(y_pred_new)+(1-y_true)*np.log(1-y_pred_new))"
+* Now I put them into "array" "np.array(y_pred_new)" and I use "log" function to check how they look like "np.log(y_pred_new)"
+
+# I fill values from pattern to **binary cross entropy** "-np.mean(y_true * np.log(y_pred_new) + (1 - y_true) * np.log(1 - y_pred_new))"
+
 # Now from previous calculations I create function "log_loss", I create "max" and "min" values and put them into array, then use "log loss pattern"
 # I also create function for "mean_squared_error", I create "total_error" as a variable 
 # Then I make for loop with "list comprehension" of "y_true, y_pred" using "zip" "for yt,yp in zip(y_true, y_pred)"
